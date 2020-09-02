@@ -1,3 +1,4 @@
+
 dict = {"Audii": 10000000, "Nishan": 500000, "Ford": 7000000, "BMW": 8000000}
 print(sorted(dict.items(), key=lambda kv: (kv[1], kv[0])))
 print("Enter name of the car :\n")
@@ -10,12 +11,23 @@ for i in sorted(dict):
         break
 
 if c == 0:
-    print("Car name that u entered does not exsit !!")
+    print("Car name that you entered does not exsit !!")
     print("Please enter the price of that car :")
     p = input()
     dict[t] = p
 else:
-    print("Car found !! and the price of that car is :", data)
+    print("Car found !! and the price of that car is :", data)\
 
 for k in sorted(dict.keys()):
     print(k, dict[k], end=" ")
+
+    """
+n = int(input("enter a n value:"))
+d = {}
+
+for i in range(n):
+    keys = input() # here i have taken keys as strings
+    values = int(input()) # here i have taken values as integers
+    d[keys] = values
+print(d)
+"""
